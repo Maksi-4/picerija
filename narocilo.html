@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Košarica | Pizzerija Pet zvezd
+    </title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer="" src="script.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            🍕 PET ZVEZD
+            <small>
+                PIZZERIJA
+            </small>
+        </a>
+        <nav>
+            <a href="index.html">
+                Domov
+            </a>
+            <a href="onas.html">
+                O nas
+            </a>
+            <a href="meni.html">
+                Meni
+            </a>
+            <a href="galerija.html">
+                Galerija
+            </a>
+            <a href="kontakt.html">
+                Kontakt
+            </a>
+        </nav>
+        <div class="actions">
+            <a class="btn secondary" href="prijava.html" id="account">
+                Prijava
+            </a>
+            <a class="btn" href="narocilo.html">
+                Košarica (
+                <span id="count">
+                    0
+                </span>
+                )
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="panel" id="cart">
+            <h2>
+                Tvoja košarica
+            </h2>
+            <div id="items">
+            </div>
+            <h3>
+                Skupaj:
+                <span id="total">
+                    0,00 €
+                </span>
+            </h3>
+            <form id="orderForm">
+                <input id="customer" placeholder="Ime in priimek" required="" />
+                <select id="delivery">
+                    <option value="pickup">
+                        Osebni prevzem
+                    </option>
+                    <option value="delivery">
+                        Dostava
+                    </option>
+                </select>
+                <input hidden="" id="address" placeholder="Naslov dostave" />
+                <button id="checkout">
+                    Oddaj demo naročilo
+                </button>
+            </form>
+            <p id="orderStatus" role="status">
+            </p>
+        </section>
+    </main>
+    <footer>
+        ★★★★★ · Pizzerija Pet zvezd · Demo spletna stran
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Galerija | Pizzerija Pet zvezd
+    </title>
+    <link href="style.css" rel="stylesheet" />
+    <script defer="" src="script.js">
+    </script>
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="index.html">
+            🍕 PET ZVEZD
+            <small>
+                PIZZERIJA
+            </small>
+        </a>
+        <nav>
+            <a href="index.html">
+                Domov
+            </a>
+            <a href="onas.html">
+                O nas
+            </a>
+            <a href="meni.html">
+                Meni
+            </a>
+            <a aria-current="page" href="galerija.html">
+                Galerija
+            </a>
+            <a href="kontakt.html">
+                Kontakt
+            </a>
+        </nav>
+        <div class="actions">
+            <a class="btn secondary" href="prijava.html" id="account">
+                Prijava
+            </a>
+            <a class="btn" href="narocilo.html">
+                Košarica (
+                <span id="count">
+                    0
+                </span>
+                )
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="galerija">
+            <p class="eyebrow">
+                UTRINKI IZ PICERIJE
+            </p>
+            <h2>
+                Galerija
+            </h2>
+            <div class="gallery">
+                <button aria-label="Prejšnja slika" id="prev">
+                    ❮
+                </button>
+                <figure>
+                    <img alt="Pica" id="galleryImage" src="pizza.jpg" />
+                    <figcaption id="galleryCaption">
+                        Sveže pečena Margherita
+                    </figcaption>
+                </figure>
+                <button aria-label="Naslednja slika" id="next">
+                    ❯
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        ★★★★★ · Pizzerija Pet zvezd · Demo spletna stran
+    </footer>
+</body>
+
+</html>
